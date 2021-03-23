@@ -1,23 +1,23 @@
 # shin seong won[201840215]
 ## [03월 23일]
 console.log('hello world...!'); </br>
-//console.log('hello world...!');
-//console.log('hello world...!');
-String("성원");
-console.log(5+3*2);
-let a=(new Date()).getHours();
-console.log(a<3 || a<8);
-console.log (a=10);
-console.log(a)
-a++ 
-a-- 
-typeof"문자열"
-'string'
-typeof 10
-'number'
-let c= true
-typeof(c)
-'boolean'
+//console.log('hello world...!');</br>
+//console.log('hello world...!');</br>
+String("성원");</br>
+console.log(5+3*2);</br>
+let a=(new Date()).getHours();</br>
+console.log(a<3 || a<8);</br>
+console.log (a=10);</br>
+console.log(a)</br>
+a++ </br>
+a-- </br>
+typeof"문자열"</br>
+'string'</br>
+typeof 10</br>
+'number'</br>
+let c= true</br>
+typeof(c)</br>
+'boolean'</br>
 
 ## [03월 16일]
 > 오늘 배운 내용 요약 <br />
