@@ -1,6 +1,6 @@
 # shin seong won[201840215]
 ## [03월 23일]
-console.log('hello world...!');
+console.log('hello world...!'); </n>
 //console.log('hello world...!');
 //console.log('hello world...!');
 String("성원");
