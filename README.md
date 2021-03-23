@@ -18,6 +18,37 @@ typeof 10</br>
 let c= true</br>
 typeof(c)</br>
 'boolean'</br>
+> console.log(52+273);  </br>
+325</br>
+> console.log(52+"273");</br>
+52273</br>
+> const constant ="변경불가";</br>
+undefined</br>
+
+> console.log(constant);</br>
+변경불가</br>
+
+let date = new Date();</br>
+console.log(date.getFullYear());</br>
+console.log(date.getMonth());</br>
+console.log(date.getDay());</br>
+console.log(date.getTime());</br>
+console.log(date.getMinutes());</br>
+console.log(date.getSeconds());</br>
+
+if(date.getHours() < 12){</br>
+    console.log ("오전입니다");
+}</br>
+console.log("오후입니다");</br>
+
+let input=32;</br>
+if(input %2==0){
+    console.log("짝수입니다")
+}</br>
+if(input %1==0){
+    console.log("홀수입니다");
+}</br>
+
 
 ## [03월 16일]
 > 오늘 배운 내용 요약 <br />
