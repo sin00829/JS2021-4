@@ -38,14 +38,14 @@ typeof 10</br>
 let c= true</br>
 typeof(c)</br>
 'boolean'</br>
-> console.log(52+273);  </br>
+console.log(52+273);  </br>
 325</br>
-> console.log(52+"273");</br>
+ console.log(52+"273");</br>
 52273</br>
-> const constant ="변경불가";</br>
+const constant ="변경불가";</br>
 undefined</br>
 
-> console.log(constant);</br>
+ console.log(constant);</br>
 변경불가</br>
 
 let date = new Date();</br>
@@ -74,9 +74,10 @@ if(input %1==0){
 > 오늘 배운 내용 요약 <br />
 > 요약 <br />
 <h4>세계에서 가장 오해를 많이 받는 프로그래밍 언어(자바스크립트)</br>
+
 1.자바스크립트의 발전 </br>
->node.js 2008년 9월: 구글은 웹브라우저의 베타 버전을 발표했다.</br>
->node.js:모든 모듈(라이브러리)이 처음부터 비동기 기반의 프로그램을 만들수 있도록 설계되어 초보자도 >쉽게만들수있음</br>
+> node.js 2008년 9월: 구글은 웹브라우저의 베타 버전을 발표했다.</br>
+ node.js:모든 모듈(라이브러리)이 처음부터 비동기 기반의 프로그램을 만들수 있도록 설계되어 초보자도 쉽게만들수있음</br>
 >스레드(Thread):효율적인 비동기 방식으로 장보기를 프로그래밍 언어로 구현하는 방법<br>
 2. 자바스크립트로 할수 있는일 :자바 스크립트는 클라이언트와 서버 개발을 동시에 할수있다</br>
 >웹 클라이언트 애플리케이션 개발 </br>
