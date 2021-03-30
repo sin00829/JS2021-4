@@ -40,4 +40,54 @@ if(input %1==0){
     console.log("홀수입니다");
 }
 
+let date = new Date();
 
+console.log(date.getmonth(3));
+
+switch(date.getmonth()+1){
+    case 12:
+    case 1:
+    case 2:
+        console.log("겨울");
+    break;
+    case 3:
+    case 4:
+    case 5:
+        console.log("봄")
+    break;
+    case 6:
+        case 7:
+        case 8:
+            console.log("여름")
+        break;
+        case 9:
+            case 10:
+            case 11:
+                console.log("가을")
+            break;
+            default:
+                console.log("????????");
+                break;
+}
+let test =777;
+test = test ? test:"초기화";
+console.log(test);
+
+test = test || "초기화";
+console.log(test); 
+
+const repl = require('repl');
+
+repl.start({
+    prompt:"숫자를 입력하세요---->",
+    eval:(command,context,filename,callback) => {
+        let number =Number(command);
+
+        if (isNAN(number)){
+            
+        }else{
+            console.log("숫자가 입니다.");
+        }
+        callback();
+    }
+})
