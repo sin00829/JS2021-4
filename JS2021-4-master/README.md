@@ -2,7 +2,7 @@
 ## [03월 23일]
 > [수업내용] </br>
 ## 1.문자 선택 연산자
-console.log("안녕하세요"[0])</br> dddddd
+console.log("안녕하세요"[0])</br> asdasd
 console.log("안녕하세요"[1])</br>
 console.log("안녕하세요"[3])</br>
 문자열의 0번째,1번째,3번째에 있는 문자를 선택 </br>
