@@ -2,10 +2,94 @@
 
 ## [03월 30일] <br>
 > [수업내용] </br>
-## if/else if 조건문 <br>
-## switch case 조건문 <br>
-## 삼항 연산자 <br>
-<불 표현식>? <참>:<거짓>
+## 1.if/else if 조건문 <br>
+if(조건문)=if (<불 표현식>){<br>
+  불 표현식이 true이면 문장을 실행,flase이면 문장을 무시함<br>
+}<br>
+<b>예시) <br>
+let input =32;<br>
+if(input % 2 ==0){<br>
+  console.log("짝수입니다");<br>
+}<br>
+if (input % 2 ==1){<br>
+  console.log("홀수입니다")<br>
+}<br>
+if else(조건문) <br>
+if(<불표현식>){<br>
+  불 표현식이 참일때 실행할 문장<br>
+}<br>
+else{<br>
+  불 표현식이 거짓일때 실행할 문장<br>
+}<br>
+예시)<br>
+let input=32;<br>
+if(input %2 ==0){<br>
+ console.log("짝수입니다");<br>
+}<br>
+else{<br>
+  console.log("홀수입니다")<br>
+}<br>
+## 2.switch case 조건문 <br>
+switch (<비교값>){<br>
+  case <값>:<br>
+  <문장><br>
+  break;<br>
+  case<값>:<br>
+  <문장><br>
+  break;<br>
+  default:<br>
+  <문장><br>
+  break;<br>
+}<br>
+let date = new Date();<br>
+console.log(date.getMonth());<br>
+switch(date.getMonth()+1){<br>
+    case 12:<br>
+    case 1:<br>
+    case 2:<br>
+        console.log("겨울");<br>
+    break;<br>
+    case 3:<br>
+    case 4:<br>
+    case 5:<br>
+        console.log("봄");<br>
+    break;<br>
+    case 6:<br>
+        case 7:<br>
+        case 8:<br>
+            console.log("여름");<br>
+        break;<br>
+            default:<br>
+                console.log("가을");<br>
+                break;<br>
+} 
+## 3.삼항 연산자 <br>
+<불 표현식>? <참>:<거짓><br>
+참과 거짓 위치에 불 자료형<br>
+console.log(number % 2 ==0 ? true:false);<br>
+참과 거짓 위치에 문자열 자료형<br>
+console.log(number % 2 ==0 ? 짝수:홀수);<br>
+## 4.짧은 초기화 조건문<br>
+|| 연산자를 불이 아닌 자료에 사용할 경우<br>
+A || B에서 A가 참이라면 A로대치<br>
+A || B에서 A가 거짓이라면 B로대치<br>
+## 5. 조금더 나아가기<br>
+웹 브라우저에서 작동하는 자바스크립트:prompt() 이름의 함수를 받음<br>
+node.js에서 작동하는 자바스크립트:단순한 코드로 입력받을 수없음<br>
+const repl = require('repl');<br>
+repl.start({<br>
+    prompt:"숫자를 입력하세요---->",<br>
+    eval:(command,context,filename,callback) => {<br>
+        let number =Number(command);<br>
+        if (isNaN(number)){<br>
+          console.log("숫자가 아닙니다.");<br>
+        }<br>
+        else{<br>
+            console.log("숫자 입니다.");<br>
+        }<br>
+        callback();<br>
+    }
+})<br>
 ## [03월 23일]
 > [수업내용] </br>
 ## 1.문자 선택 연산자
