@@ -62,7 +62,7 @@ switch(date.getMonth()+1){<br>
             default:<br>
                 console.log("가을");<br>
                 break;<br>
-}
+} 
 ## 3.삼항 연산자 <br>
 <불 표현식>? <참>:<거짓><br>
 참과 거짓 위치에 불 자료형<br>
