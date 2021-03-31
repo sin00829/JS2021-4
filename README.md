@@ -9,7 +9,7 @@ if(조건문)=if (<불 표현식>){<br>
 <b>예시) <br>
 let input =32;<br>
 if(input % 2 ==0){<br>
-  console.log("짝수입니다");<br>
+  console.log("짝수입니다");<br> 
 }<br>
 if (input % 2 ==1){<br> 
   console.log("홀수입니다")<br>

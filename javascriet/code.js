@@ -5,7 +5,7 @@ repl.start({
     eval:(command,context,filename,callback) => {
         let number =Number(command);
 
-        if (isNAN(number)){
+        if (isNAN(number)){  
           console.log("숫자가 아닙니다.");
         }
         else{
