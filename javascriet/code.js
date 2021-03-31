@@ -5,12 +5,12 @@ repl.start({
     eval:(command,context,filename,callback) => {
         let number =Number(command);
 
-        if (isNaN(number)){
+        if (isNAN(number)){
           console.log("숫자가 아닙니다.");
         }
         else{
-            console.log("숫자 입니다.");
+            console.log("숫자가 입니다.");
         }
         callback();
     }
-})
+})  

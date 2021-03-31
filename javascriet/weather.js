@@ -18,7 +18,7 @@ switch(date.getMonth()+1){
         case 8:
             console.log("여름");
         break;
-            default:
+            default:  
                 console.log("가을");
                 break;
 }

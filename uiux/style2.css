@@ -1,0 +1,24 @@
+.container-1 {
+    display : flex; /* 화면 구성을 container-1 안의 div 태그 만큼 나누기 */
+    align-items: stretch; /* 수직 정렬 */
+    justify-content: space-between; /* 수평정렬 */ 
+    flex-direction:column; /* row */
+}
+
+.container-1 > div {
+    max-width: 200px;
+    border: 1px solid #000;
+
+}
+
+.box1 {
+    flex : 1;   /* 1 비율 */
+}
+
+.box2 {
+    flex : 2; /* 2 비율 */
+}
+
+.box3 {
+    flex : 1;
+}

@@ -1,0 +1,54 @@
+/* div  {
+    border: 1px solid red;
+}
+div > p {
+    color: purple;
+}
+
+div > p:nth-child(even) { /* div 밑에 있는 n번째 p 자식 선택 odd: 홀수, 짝수 : even 
+    color: red;
+} */
+
+/*  div > p : 하위 선택자 
+    div, p  : 그룹 선택자
+    *       : 전체 선택자
+
+
+
+*/
+
+
+* {
+    margin :0;
+    padding :0;
+} /* 보통 이러한 상태를 깔고 작업을 시작한다. */
+
+h1 {
+    border : 1px solid red;
+    width : 200px;
+    height: 200px;
+    text-align: center; /* 가운데 정렬 */
+    line-height : 200px; /* 세로 정렬 */
+    border-radius: 15px; /* 박스 모서리 둥글게 */
+}
+
+li {
+    font-size : 24px;
+    border: 1px solid #000;
+    float:left; 
+    
+}
+
+ul {
+    list-style : none;
+    border: 1px solid red;
+    overflow: hidden; /* 자신의 영역 인식 */
+}
+
+#li2 {
+    margin : 10px 20px; 
+}
+
+#li3 {
+    margin : 10px 5px 0px 30px;
+}
