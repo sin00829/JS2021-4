@@ -11,7 +11,7 @@ let input =32;<br>
 if(input % 2 ==0){<br>
   console.log("짝수입니다");<br>
 }<br>
-if (input % 2 ==1){<br>
+if (input % 2 ==1){<br> 
   console.log("홀수입니다")<br>
 }<br>
 if else(조건문) <br>
