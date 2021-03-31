@@ -15,9 +15,9 @@ if (input % 2 ==1){<br>
   console.log("홀수입니다")<br>
 }<br>
 if else(조건문) <br>
-if(<불표현식>){<br>
+if(<불표현식>){<br> 
   불 표현식이 참일때 실행할 문장<br>
-}<br>
+}<br> 
 else{<br>
   불 표현식이 거짓일때 실행할 문장<br>  
 }<br>
