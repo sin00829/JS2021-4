@@ -18,7 +18,7 @@ typeof(c)
 'boolean'
 const con1=("문자열상수");
 con1 = "";
-console.log(con1);
+console.log(con1);  
 let date = new Date();
 console.log(date.getFullYear());
 console.log(date.getMonth());
