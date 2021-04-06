@@ -4,54 +4,83 @@
 > [수업내용] </br>
 
 ## 1. for 반복문 <br>
-let output= 0; //반복문을 선언합니다.
-for (let i=0; i<=100; i++){  //반복을 수행합니다.
-  output +=i;
-}
-console.log(output);//출력합니다.
+let output= 0; //반복문을 선언합니다.<br>
+for (let i=0; i<=100; i++){  //반복을 수행합니다.<br>
+  output +=i;<br>
+}<br>
+console.log(output);//출력합니다.<br>
 
-## 2. 역 for 반복문<br>
-for (let i = length-1; i>= 0; i--){
-}
-[예제] 
-//배열을 생성합니다.
-let foo = {1,2,3,4,5,6};
-//요소의 길이를 출력합니다.
-for(let i= foo.length -1 ; i >= 0;i--){
-  console.log(array[i]);
-}
-## 3. for in 반복문과 for of 반복문
-// 변수를 선언
-let foo =["사과","배","포도","멜론"]
-for(let i in foo){
-  console.log(`${i}번째 요소:${foo[i]}`);
+## 2. 역 for 반복문<br><br>
+for (let i = length-1; i>= 0; i--){<br>
+}<br>
+[예제] <br>
+//배열을 생성합니다.<br>
+let foo = {1,2,3,4,5,6};<br>
+//요소의 길이를 출력합니다.<br>
+for(let i= foo.length -1 ; i >= 0;i--){<br>
+  console.log(array[i]);<br>
+}<br>
+## 3. for in 반복문과 for of 반복문<br>
+// 변수를 선언<br>
+let foo =["사과","배","포도","멜론"]<br>
+for(let i in foo){<br>
+  console.log(`${i}번째 요소:${foo[i]}`);<br>
 
-  for(let item in foo){
-  console.log(item);
-}
-## 4. 중첩 반복문 
-let output="";
-for(let i=0; i < 10; i++){
-  for(let j =0; j < i+1; j++){
-    output +="*"
-  }
-  output+="\n";
-}
-console.log(output0);
+  for(let item in foo){<br>
+  console.log(item);<br>
+}<br>
+## 4. 중첩 반복문 <br>
+let output="";<br>
+for(let i=0; i < 10; i++){<br>
+  for(let j =0; j < i+1; j++){<br>
+    output +="*"<br>
+  }<br>
+  output+="\n";<br>
+}<br>
+console.log(output0);<br>
 
-## 5. break 키워드 
-let i=0;
-let array = [1,31,273,57,8]
-let output;
+## 5. break 키워드 <br>
+let i=0;<br>
+let foo = [1,31,273,57,8]<br>
+let output;<br>
 
-while (true){
-if(array[i]%2==0){
-  ouput =array[i];
-  break;
-}
-i =i+1;
-}
-comsole.log("처음 발견할 짝수는 ${output}입니다.");
+while (true){<br>
+if(foo[i]%2==0){<br>
+  ouput =foo[i];<br>
+  break;<br>
+}<br>
+i++<br>
+}<br>
+comsole.log("처음 발견할 짝수는 ${output}입니다.");<br>
+// 선언 동시에 초기화<br>
+// let foo=new Array(1,10,오렌지)<br>
+## 추가적으로 알아야할 함수들<br>
+push 배열 마지막 주소에 값을 추가해주는 함수 <br>
+pop 배열 마지막 주소에 있는 값을 제거해주는 함수<br>
+shift 배열 첫번째 주소에있는 값을 제거한후에 변환해주는 함수<br>
+concat 두개를 합쳐주는 함수<br>
+reverse 역방향으로 하는 함수<br>
+slice(1,5) 1부터 5전까지만 출력해주는 함수 (자료들이 사라짐)<br>
+splice 슬라이스와 같으나 자료들이 없어지지 않고 복사해서 가져옴<br>
+join("/") /사용할때 많이쓰임 <br>
+##6. continue 키워드 <br>
+계속해서 반복할때 사용<br>
+for(let i = 1; i<10; i++){<br>
+  if(i%2==0){<br>
+    continue;<br>
+  }<br>
+  console.log(i)<br>
+}<br>
+##7. 스코프<br>
+변수를 사용할 수 있는 범위<br>
+스코프 == 블록 / 전역변수,지역변수<br>
+메서드안에서만정의되있는것은 그안에서만 사용가능 <br>
+(중괄호로 둘러싸는 부분만 사용가능)<br>
+##8. 호이스팅 <br>
+해당 블록에서 사용할 변수를 미리 확인해서 정리하는작업 <br>
+##9. var키워드<br>
+let:일반적으로 let을 사용함 <br>
+var:익스플로러는 var키워드로 생성한변수로 바꿔주면됨 <br>
 ## [03월 30일] <br>
 > [수업내용] </br>
 ## 1.if/else if 조건문 <br>
