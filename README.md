@@ -1,5 +1,57 @@
 # shin seong won[201840215]
 
+## [04월 06일] <br>
+> [수업내용] </br>
+
+## 1. for 반복문 <br>
+let output= 0; //반복문을 선언합니다.
+for (let i=0; i<=100; i++){  //반복을 수행합니다.
+  output +=i;
+}
+console.log(output);//출력합니다.
+
+## 2. 역 for 반복문<br>
+for (let i = length-1; i>= 0; i--){
+}
+[예제] 
+//배열을 생성합니다.
+let foo = {1,2,3,4,5,6};
+//요소의 길이를 출력합니다.
+for(let i= foo.length -1 ; i >= 0;i--){
+  console.log(array[i]);
+}
+## 3. for in 반복문과 for of 반복문
+// 변수를 선언
+let foo =["사과","배","포도","멜론"]
+for(let i in foo){
+  console.log(`${i}번째 요소:${foo[i]}`);
+
+  for(let item in foo){
+  console.log(item);
+}
+## 4. 중첩 반복문 
+let output="";
+for(let i=0; i < 10; i++){
+  for(let j =0; j < i+1; j++){
+    output +="*"
+  }
+  output+="\n";
+}
+console.log(output0);
+
+## 5. break 키워드 
+let i=0;
+let array = [1,31,273,57,8]
+let output;
+
+while (true){
+if(array[i]%2==0){
+  ouput =array[i];
+  break;
+}
+i =i+1;
+}
+comsole.log("처음 발견할 짝수는 ${output}입니다.");
 ## [03월 30일] <br>
 > [수업내용] </br>
 ## 1.if/else if 조건문 <br>
