@@ -1,5 +1,132 @@
 # shin seong won[201840215]
 
+## [04월 13일] <br>
+> [수업내용] </br>
+## 1. 익명함수<br>이름을 붙이지 않고 함수 생성
+let(변수이름)=function(){};<br>
+
+let hamsu = function(){<br>
+
+let hamsu = function(){<br>
+  console.log("첫 줄");<br>
+  console.log("둘째줄");<br>
+}<br>
+hamsu();<br>
+console.log(hamsu);<br>
+변수이름을 사용 <br>
+
+## 2.선언적함수
+
+function foo(){<br>
+  console.log("첫 줄");<br>
+  console.log("둘째줄");<br>
+}<br>
+foo()<br>
+console.log(foo);<br>
+메서드를 바로사용 <br>
+
+## 3.화살표 함수 
+() => { }<br>
+하나의 표현식을 리턴하는 함수 를 만들때는 중괄호 생략가능<br>
+let foo= ()=>{<br>
+  console.log("첫째줄")<br>
+  console.log("둘째줄")<br>
+}<br>
+foo();<br>
+
+## 4.함수의 기본 형태
+function <함수이름>(<매개변수>){<br>
+  <함수코드><br>
+  return <리턴값><br>
+}<br>
+
+function power(x){<br>
+  return x * x;<br>
+}
+console.log(power(10));<br>
+console.log(power(20));<br>
+
+function power(x,y){<br>
+  bar = x * y;<br>
+  return bar;<br>
+}<br>
+console.log(power(10,20));<br>
+console.log(power(20,30));<br>
+
+function print(x){<br>
+  console.log(`"${x}"이라고 말했습니다`);<br>
+}
+print("안녕하세요");<br>
+*리턴하는 함수의 기본형태*<br>
+function(<매개변수>,<매개변수>){<br>
+  let output =<초깃값>;<br>
+  //output 계산<br>
+  return output;<br>
+}<br>
+
+function sum(min,max){<br>
+  let output = 0;<br>
+  for(let i = min; i<=max;i++){<br>
+    output += i;<br>
+  }<br>
+  return output;<br>
+}<br>
+console.log(sum(1,100));<br>
+
+## 4. 함수 매개 변수 초기화
+//함수를 선언합니다.<br>
+function print(name,count){<br>
+  console.log(`${name}이/가 ${count}개 있습니다.`)<br>
+}<br>
+print("사과",10);<br>
+print("사과");(실행하면 undefined가 출력)<br>
+
+function print(name,count){<br>
+  if(!count){<br>
+    count="오류입니다";<br>
+  }<br>
+  console.log(`${name}가 ${count}개 있습니다.`)<br>
+}<br>
+print("사과");<br>
+
+function print(name,count){<br>
+    count= count || 1;
+  console.log(`${name}가 ${count}개 있습니다.`)<br>
+}
+print("사과");<br>
+print("사과",10);<br>
+
+function print(name,count=1){<br>
+  console.log(`${name}가 ${count}개 있습니다.`)<br>
+}
+print("사과");<br>
+print("사과",10);<br>
+
+## 5.콜백 함수 
+함수의 매개 변수로 전달되는 함수 <br>
+function callTenTimes(foo){<br>
+  for(let i=0; i<10;i++){<br>
+    foo();<br>
+  }<br>
+}<br>
+
+callTenTimes(function() {<br>
+  console.log("함수호출");<br>
+})<br>
+
+## 6. 표준 내장 함수
+parseInt() 문자열을 정수로 변환합니다.<br>
+parseFloat() 문자열을 실수로 변환합니다.<br>
+
+let inputA ="52";<br>
+let inputB ="52.273";<br>
+let inputC ="1401동";<br>
+
+console.log(parseInt(inputA));<br>
+console.log(parseInt(inputB));<br>
+console.log(parseFloat(inputB));<br>
+console.log(parseInt(inputC));<br>
+console.log(Number(inputC)); (문자는 다사라짐 예)동x)<br>
 ## [04월 06일] <br>
 > [수업내용] </br>
 
