@@ -2,7 +2,8 @@
 
 ## [04월 13일] <br>
 > [수업내용] </br>
-## 1. 익명함수<br>이름을 붙이지 않고 함수 생성
+## 1. 익명함수<br>
+이름을 붙이지 않고 함수 생성<br>
 let(변수이름)=function(){};<br>
 
 let hamsu = function(){<br>
@@ -127,6 +128,22 @@ console.log(parseInt(inputB));<br>
 console.log(parseFloat(inputB));<br>
 console.log(parseInt(inputC));<br>
 console.log(Number(inputC)); (문자는 다사라짐 예)동x)<br>
+
+타이머 함수 <br>
+'특정 시간 후에'또는 '특정 시간마다' 어떤 일을 할 때 사용<br>
+setTimeout(함수,시간)<br>
+setInterval(함수,시간)<br>
+setTimeout(function(){<br>
+  console.log("1초지남")<br>
+},1000);<br>
+
+setInterval(() => {<br>
+  console.log("1초지남")<br>
+}, 1000);<br>
+
+clearInterval() 함수<br>
+특정 시간마다 실행하던 함수 호출을 정지합니다.<br>
+
 ## [04월 06일] <br>
 > [수업내용] </br>
 
