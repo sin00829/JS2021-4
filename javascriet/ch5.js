@@ -36,7 +36,7 @@ console.log(power(10,20));
 console.log(power(20,30));
  */
 /* function print(x){
-  console.log(`"${x}"이라고 말했습니다`);
+  console.log(`${x}"이라고 말했습니다`);
 }
 print("안녕하세요"); */
 
@@ -98,3 +98,53 @@ setInterval(() => {
   console.log("1초지남")
 }, 1000); */
 
+
+
+
+/* let foo = setInterval(() =>{
+  console.log("출력합니다.");
+},1000);
+
+setTimeout(function(){
+  clearInterval(foo);
+},3000); */
+
+/* let bar;
+bar = 10;
+bar = 20;
+console.log(bar);
+
+//코드 5-19 
+//
+let foo;
+foo = function(){
+  console.log("첫번째 함수")
+}
+foo= ()=>{
+  console.log("두번째 함수")
+}
+foo(); */
+
+//코드 5-20
+//
+/* foo = function (){
+  console.log("첫번째 함수")
+}
+function foo(){
+  console.log("두번째 함수")
+}
+foo();   //선언적함수보다 무명함수가 우선순위
+ */
+let foo=[
+  {name:"바나나",price:1200},
+  {name:"딸기",price:3000},
+  {name:"수박",price:10000},
+  {name:"사과",price:2000},
+];
+function bar(foo){
+  console.log(`${foo.name}의가격은 ${foo.price}원입니다.`);
+}
+
+for(let foo1 of foo){
+ bar(foo1);
+}

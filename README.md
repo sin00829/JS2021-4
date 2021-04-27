@@ -1,4 +1,97 @@
 # shin seong won[201840215]
+## [04월 27일] <br>
+> [수업내용] </br>
+/* let foo = setInterval(() =>{<br>
+  console.log("출력합니다.");<br>
+},1000);<br>
+<br>
+setTimeout(function(){<br>
+  clearInterval(foo);<br>
+},3000); */<br>
+<br>
+/* let bar;<br>
+bar = 10;<br>
+bar = 20;<br>
+console.log(bar);<br>
+<br>
+//코드 5-19 <br>
+//<br>
+let foo;<br>
+foo = function(){<br>
+  console.log("첫번째 함수")<br>
+}<br>
+foo= ()=>{<br>
+  console.log("두번째 함수")<br>
+}<br>
+foo(); */<br>
+
+//코드 5-20<br>
+//<br>
+foo = function (){<br>
+  console.log("첫번째 함수")<br>
+}<br>
+function foo(){<br>
+  console.log("두번째 함수")<br>
+}<br>
+foo();   //선언적함수보다 무명함수가 우선순위<br>
+## 1.객체 기본
+//배열을 선언합니다.<br>
+let array=["사과","바나나","망고","딸기"];<br>
+array[0]  사과<br>
+array[1]  망고 <br>
+
+코드6-2 객체 선언 <br>
+//객체를 선언합니다.<br>
+let foo =["사과","바나나"];<br>
+let product = {<br>
+  제품명(스페이스 누르면 오류남): "7D 건조 망고",<br>
+  유형 "당절임",<br>
+  성분 "망고,설탕",<br>
+  원산지:"필리핀"<br>
+};<br>
+console.log(product["원산지"]);<br>
+console.log(foo[1]);<br>
+
+## 2. 객체와 반복문 
+let object = {<br>
+  name: "바나나",<br>
+  price: 1200<br>
+};<br>
+//출력<br>
+for(let key in object){<br>
+  console.log(`$(key):$(object[key])`);<br>
+}<br>
+
+## 3. 속성과 메소드 
+
+var object = {<br>
+  number:273.<br>
+  string:"shinseoungwon",<br>
+  boolean"true",<br>
+  array:[52,273,103,321],<br>
+  method: function(){<br>
+    console.log(`${this.string}`)<br>
+  }<br>
+};<br>
+object.method();<br>
+
+## 4. 생성자 함수와 프로토타입
+
+let foo=[<br>
+  {name:"바나나",price:1200},<br>
+  {name:"딸기",price:3000},<br>
+  {name:"수박",price:10000},<br>
+  {name:"사과",price:2000},<br>
+];<br>
+function bar(foo){<br>
+  console.log(`${foo.name}의가격은 ${foo.price}원입니다.`);<br>
+}<br>
+
+for(let foo1 of foo){<br>
+ bar(foo1);<br>
+}<br>
+
+ 
 
 ## [04월 13일] <br>
 > [수업내용] </br>
