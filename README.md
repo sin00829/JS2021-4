@@ -91,6 +91,14 @@ for(let foo1 of foo){<br>
  bar(foo1);<br>
 }<br>
 
+생성자 함수 객체를 만드는 함수,대문자로 시작하는 이름사용 <br>
+function Foo(name,price){<br>
+  this.name=name;<br>
+  this.pricce=price;<br>
+}<br>
+let foo = new FOO("바나나",1200);<br>
+console.log(foo)<br>
+
  
 
 ## [04월 13일] <br>
