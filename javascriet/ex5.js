@@ -6,7 +6,7 @@ for(let i=0; i < 10; i++){
   output+="\n";
 }
 console.log(output);
-for(let i=0; i < 10; i++){
+/* for(let i=0; i < 10; i++){
   for(let j =0; j < 10-i; j++){
     output +=" ";
   }
@@ -28,4 +28,4 @@ for(let i=0; i < 10; i++){
   }
   output+="\n";
 }
-console.log(output);
+console.log(output); */

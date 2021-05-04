@@ -1,4 +1,4 @@
-console.log('hello world...!');
+/* console.log('hello world...!');
 //console.log('hello world...!');
 //console.log('hello world...!');
 String("성원");
@@ -75,7 +75,7 @@ console.log(test);
 
 test = test || "초기화";
 console.log(test); 
-
+ */
 const repl = require('repl');
 
 repl.start({
@@ -83,10 +83,10 @@ repl.start({
     eval:(command,context,filename,callback) => {
         let number =Number(command);
 
-        if (isNAN(number)){
-            
+        if (isNaN(number)){
+            console.log("숫자가 아닙니다");
         }else{
-            console.log("숫자가 입니다.");
+            console.log("숫자 입니다.");
         }
         callback();
     }

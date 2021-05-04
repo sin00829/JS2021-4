@@ -1,4 +1,92 @@
 # shin seong won[201840215]
+## [05 04일] <br>
+
+## 1.생성자 함수 
+객체를 만든느 함수 , 대문자로 시작하는 이름 사용  <br>
+예) function Product(name,price){ <br>
+  this.name = name ; <br>
+  this.price = price; <br>
+} <br>
+let product = new product("바나나",1200) <br>
+생성자 함수로 만든 객체는 프로토 타입 공간에 메소드를 지정해서 모든 객체가 공유하도록함 <br>
+최근에는 클래스도 사용가능!
+## 2. 조금더 나아가기
+console.log(null);<br>
+console.log(typeof(null);<br>
+출력값:null object<br>
+
+## 3. 기본자료형과 객체 자료형의 차이
+자바스크립트는 다양한 객체를 제공<br> 
+통합 개발 환경에서 자동완성기능 예)new Date()<br> 
+기본 자료형 숫자, 문자열 ,불 <br> 
+number=273;<br> 
+string="안녕하세요"<br> 
+boolean=true;   자바스크립트는 뒤에값에 따라 자료형이바뀜 <br> 
+
+기본자료형의 속성 또는 메소드를 사용할 때 기본 자료형이 자동으로 객체로 변환이됨<br> 즉, 기본 자료형과 객체 자료형 모두 속성과 메소드를 사용함
+
+차이점: 기본 자료형은 객체가 아니므로 속성과 메소드를 추가할 수 없음 (다른언어들)<br>
+
+기본 자료형에 프로토타입으로 메소드추가<br>
+let primtiveNumber =273;<br>
+
+Number.prototype.method = function(){<br>
+  return "ADD Method";<br>
+}<br>
+console.log(primtiveNumber.method());<br>
+
+## 4. Number 객체
+let number =273;<br>
+let numberConstructor = new Number(273);<br>
+메소드 <br>
+toExponential() 지수표시 문자열 리턴<br>
+toFixed() 고정소수점표시 <br>
+toPrecision() 지수표시 고정소수점표시 문자열리턴<br>
+
+사용예) let number =273.12345<br>
+console.log(number.toFixed(1));<br>
+출력 273.1<br>
+
+<h3>생성자 함수의 속성</h3> <br>
+MAX_VALUE 최대숫자<br>
+MIN_VALUE 최소숫자<br>
+
+let numberA= Number.MAX_VALUE;<br>
+let numberB= Number.MAX_VALUE+100;<br>
+console.log(numberA);<br>
+console.log(numberB); 값이 똑같이 나옴 맥심업보다 큰수를 넣어도 오류가안남 <br>
+
+let numberA= Number.MIN_VALUE;<br>
+let numberB= Number.MIN_VALUE+100;<br>
+console.log(numberA);<br>
+console.log(numberB);<br>
+
+## 5.String 객체
+let foo ="안녕하세요"<br>
+let fooConstructor = new String("안녕하세요");<br>
+<h3>잘못된 String 객체의 메소드 </h3><br>
+let string ="abcdefg";<br>
+String.toUpperCase();<br>
+console.log(String)<br>
+<h3>옳바른예</h3><br>
+let string = "abcdefg";<br>
+let bar =string.toUpperCase();<br>
+console.log(string);<br>
+console.log(bar);<br>
+<h3>메소드의 활용</h3><br>
+let foo "안녕하세요. 좋은 아침입니다.";<br>
+
+if(foo.indexof("아침")>=0){<br>
+ console.log("좋은 아침입니다.");<br>
+}else{<br>
+console.log("안녕히 주무세요.");<br>
+}<br>
+split() 메소드를 사용하면 특정한 기호를 기반으로 문자욜을 분해함
+
+let string = "감자,고구마,바나나";<br>
+let array = string.split(",");<br>
+console.log(array);<br>
+출력 감자,고구마,바나나,사과<br>
 ## [04월 27일] <br>
 > [수업내용] </br>
 

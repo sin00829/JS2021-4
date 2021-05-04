@@ -1,6 +1,6 @@
 let date = new Date();
 
-console.log(date.getMonth());
+console.log(date.getMonth()+1);
 
 switch(date.getMonth()+1){
     case 12:
