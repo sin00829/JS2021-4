@@ -1,8 +1,65 @@
 # shin seong won[201840215]
+## [05 11일] <br>
+
+## 1. Date 객체
+
+new Date() 현재 시간으로 Date 객체를 생성합니다.
+new Date(유닉스타임) 유닉스 타임 1970년 1월1일 00시00분00초부터 경과한 밀리초 로 객체를 생성
+new Date(시간문자열) 문자열로 객체를생성
+new Date(시간요소) 월-1 일,시간,분,초 밀리초 객체생성(월은0부터시작)
+
+7-5 Date 객체 생성 
+let dateA = new Date();
+console.log(dateA);  현재시간을 불러오는것 
+
+let dateA = new Date(1600000000);
+유닉스 코드 예)
+
+메소드의 활용
+dateA.getHours();
+
+7-6
+let date = new Date();
+console.log(date);
+date.setFullyear(date.getFullyear() + 1);
+date.setMonth(date.getMonth()+1);
+date.setDate(date.getDate()+1);
+console.log(date);
+2021-05-11 
+2022-06-12
+
+7-7
+let now = new Date();
+let before = new Date('December 9,2020');
+let interval = now.getTime() - before.getTime();
+console.log(interval);
+interval = Math.floor(interval / (1000*60*60*24));
+console.log(interval);
+출력 153 
+시간 간격구하기 
+getTime() 메소드:유닉스타임
+
+## 2. Array 객체
+Array 객체의 기본 메소드 
+- pop* : 배열의 마지막 주소에 있는 값을 제거.
+- slice : 배열요소의 지정한 부분을 리턴
+- push* : 배열의 마지막에 새로운 요소를 추가 후 변경된 배열의 길이를 반환
+- concat : 두개의 배열을 합쳐주는 함수.
+- reverse* : 배열을 역순으로 재배치.
+- splice* : 배열의 특정 위치에 배열 요소를 추가하거나 삭제.
+- sort* : 배열을 정렬.
+- join : 배열의 모든 요소를 연결해 하나의 문자열로 만듬.
+
+7-8 
+let foo = [
+  {
+    name: "고구마"},
+    {price:10000}
+    ]
 ## [05 04일] <br>
 
 ## 1.생성자 함수 
-객체를 만든느 함수 , 대문자로 시작하는 이름 사용  <br>
+객체를 만드는 함수 , 대문자로 시작하는 이름 사용  <br>
 예) function Product(name,price){ <br>
   this.name = name ; <br>
   this.price = price; <br>
