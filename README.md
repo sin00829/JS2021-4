@@ -63,23 +63,23 @@ let foo = [<br>
   }<br>
     ];<br>
 
-    ECMAscript5에서 추가된 메서드<br>
-    모질라 래퍼런스 <br>
-    forEach 배열의 요소를 하나씩 뽑아 반복<br>
-    map() 콜백 함숭에서 리턴하는 것을 기반으로 새로운 배열을 만듬<br>
-    filter() 콜백 함수에서 true를 리턴하는 것으로만 새로운 배열을 만들어 리턴 <br>
+    ECMAscript5에서 추가된 메서드
+    모질라 래퍼런스 
+    forEach 배열의 요소를 하나씩 뽑아 반복
+    map() 콜백 함숭에서 리턴하는 것을 기반으로 새로운 배열을 만듬
+    filter() 콜백 함수에서 true를 리턴하는 것으로만 새로운 배열을 만들어 리턴 
     
-    7-10 <br>
-    let foo{1,30,40,50,100};<br>
-    foo.forEach((item, index) =>{<br>
-      console.log(`${index} - ${item}`);<br>
-    });<br>
+    7-10 
+    let foo{1,30,40,50,100};
+    foo.forEach((item, index) =>{
+      console.log(`${index} - ${item}`);
+    });
 
-    let bar = foo.map((item,index)=>{<br>
-      return item+100;<br>
-    });<br>
-    console.log(bar);<br>
-    출력 [101,130,140,150,200] <br>
+    let bar = foo.map((item,index)=>{
+      return item+100;
+    });
+    console.log(bar);
+    출력 [101,130,140,150,200] 
 
   foobar = foo.filter((item,index)=>{<br>
     return item % 2 ==0; // 2로 나누었을 때 0 짝수
