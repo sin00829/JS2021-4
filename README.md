@@ -3,59 +3,139 @@
 
 ## 1. Date 객체
 
-new Date() 현재 시간으로 Date 객체를 생성합니다.
-new Date(유닉스타임) 유닉스 타임 1970년 1월1일 00시00분00초부터 경과한 밀리초 로 객체를 생성
-new Date(시간문자열) 문자열로 객체를생성
-new Date(시간요소) 월-1 일,시간,분,초 밀리초 객체생성(월은0부터시작)
+new Date() 현재 시간으로 Date 객체를 생성합니다.<br>
+new Date(유닉스타임) 유닉스 타임 1970년 1월1일 00시00분00초부터 경과한 밀리초 로 객체를 생성<br>
+new Date(시간문자열) 문자열로 객체를생성<br>
+new Date(시간요소) 월-1 일,시간,분,초 밀리초 객체생성(월은0부터시작)<br>
 
-7-5 Date 객체 생성 
-let dateA = new Date();
-console.log(dateA);  현재시간을 불러오는것 
+7-5 Date 객체 생성 <br>
+let dateA = new Date();<br>
+console.log(dateA);  현재시간을 불러오는것 <br>
 
-let dateA = new Date(1600000000);
-유닉스 코드 예)
+let dateA = new Date(1600000000);<br>
+유닉스 코드 예)<br>
 
-메소드의 활용
-dateA.getHours();
+메소드의 활용<br>
+dateA.getHours();<br>
 
-7-6
-let date = new Date();
-console.log(date);
-date.setFullyear(date.getFullyear() + 1);
-date.setMonth(date.getMonth()+1);
-date.setDate(date.getDate()+1);
-console.log(date);
-2021-05-11 
-2022-06-12
+7-6<br>
+let date = new Date();<br>
+console.log(date);<br>
+date.setFullyear(date.getFullyear() + 1);<br>
+date.setMonth(date.getMonth()+1);<br>
+date.setDate(date.getDate()+1);<br>
+console.log(date);<br>
+2021-05-11 <br>
+2022-06-12<br>
 
-7-7
-let now = new Date();
-let before = new Date('December 9,2020');
-let interval = now.getTime() - before.getTime();
-console.log(interval);
-interval = Math.floor(interval / (1000*60*60*24));
-console.log(interval);
-출력 153 
-시간 간격구하기 
-getTime() 메소드:유닉스타임
+7-7<br>
+let now = new Date();<br>
+let before = new Date('December 9,2020');<br>
+let interval = now.getTime() - before.getTime();<br>
+console.log(interval);<br>
+interval = Math.floor(interval / (1000*60*60*24));<br>
+console.log(interval);<br>
+출력 153 <br>
+시간 간격구하기 <br>
+getTime() 메소드:유닉스타임<br>
 
 ## 2. Array 객체
-Array 객체의 기본 메소드 
-- pop* : 배열의 마지막 주소에 있는 값을 제거.
-- slice : 배열요소의 지정한 부분을 리턴
-- push* : 배열의 마지막에 새로운 요소를 추가 후 변경된 배열의 길이를 반환
-- concat : 두개의 배열을 합쳐주는 함수.
-- reverse* : 배열을 역순으로 재배치.
-- splice* : 배열의 특정 위치에 배열 요소를 추가하거나 삭제.
-- sort* : 배열을 정렬.
-- join : 배열의 모든 요소를 연결해 하나의 문자열로 만듬.
+Array 객체의 기본 메소드 <br>
+*=자기자신을변화<br>
+- pop* : 배열의 마지막 주소에 있는 값을 제거.<br>
+- slice : 배열요소의 지정한 부분을 리턴<br>
+- push* : 배열의 마지막에 새로운 요소를 추가 후 변경된 배열의 길이를 반환<br>
+- concat : 두개의 배열을 합쳐주는 함수.<br>
+- reverse* : 배열을 역순으로 재배치.<br>
+- splice* : 배열의 특정 위치에 배열 요소를 추가하거나 삭제.<br>
+- sort* : 배열을 정렬.<br>
+- join : 배열의 모든 요소를 연결해 하나의 문자열로 만듬.<br>
 
-7-8 
-let foo = [
-  {
-    name: "고구마"},
-    {price:10000}
-    ]
+7-8 <br>
+let foo = [<br>
+  {<br>
+    name: "고구마",<br>
+    price: 1000<br>
+  },<br>
+  {<br>
+    name: "감자",<br>
+    price: 500<br>
+  }<br>
+    ];<br>
+
+    ECMAscript5에서 추가된 메서드<br>
+    모질라 래퍼런스 <br>
+    forEach 배열의 요소를 하나씩 뽑아 반복<br>
+    map() 콜백 함숭에서 리턴하는 것을 기반으로 새로운 배열을 만듬<br>
+    filter() 콜백 함수에서 true를 리턴하는 것으로만 새로운 배열을 만들어 리턴 <br>
+    
+    7-10 <br>
+    let foo{1,30,40,50,100};<br>
+    foo.forEach((item, index) =>{<br>
+      console.log(`${index} - ${item}`);<br>
+    });<br>
+
+    let bar = foo.map((item,index)=>{<br>
+      return item+100;<br>
+    });<br>
+    console.log(bar);<br>
+    출력 [101,130,140,150,200] <br>
+
+  foobar = foo.filter((item,index)=>{<br>
+    return item % 2 ==0; // 2로 나누었을 때 0 짝수
+  });<br>
+  console.log(foobar);<br>
+  출력 [30,40,50,100]<br>
+
+  Json 객체 <br>
+  자바스크립트 객체를 사용한 데이터 표현방법<br>
+  key:value<br>
+  제약사항 문자열은 큰따움표로만 <br>
+  모든 키는 큰따움표로 감싸야함<br>
+  숫자 문자열 볼 자료형 만 사용가능 <br>
+
+  ## 1. 예외와 기본 예외 처리 
+  예외: 실행에 문제가 발생하면 자동 중단됨 이렇게 발생한 오류<br>
+  예외 처리 : 오류에 대처할 수 있게 하는 것<br>
+
+  function callTherrTimes(callback){<br>
+    for(let i=0; i<3; i++){<br>
+      callback();<br>
+    }<br>
+  }<br>
+  calltherrTimes(function(){<br>
+    console.log("안녕하세요")<br>
+  });<br>
+
+  callTherrTimes(); 오류 <br>
+  ## 2. 고급 예외 처리 
+  try catch finally 구문<br>
+  try {<br>
+    // 예외가 발생하면 <br>
+  } catch(exception){<br>
+    //여기서 처리합니다 <br>
+  }<br>
+ try {<br>
+   //예외가 발생하면<br>
+ }finally{<br>
+ // 무조건 처리함 <br>
+ }
+ 예) try{<br>
+   const array = new Array(-2000);<br>
+ }catch(exception){<br>
+   console.log(`${exceotion.name}예외가 <br>발생했습니다`);<br>
+ }finally{<br>
+   console.log(`finally 구문이 싱행되었습니다.`);<br>
+ }<br>
+
+ throw `강제 예외` <br>
+ const error = new Error(`메세지`);<br>
+ error name = `내 마음대로 오류`;<br>
+ eroor.message= '오류의 메세지`;<br>
+ throw error; <br>
+ try{<br>
+   throw `예외 발생`;<br>
+ }<br>
 ## [05 04일] <br>
 
 ## 1.생성자 함수 
