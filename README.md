@@ -2,71 +2,71 @@
 ## [05 18일] <br>
 
 ## 1. 전역 변수
-__filename 현재실행중인 코드의 파일 경로 
-__dirname 현재 실행중인 코드의 풀더 경로 
+__filename 현재실행중인 코드의 파일 경로 <br>
+__dirname 현재 실행중인 코드의 풀더 경로 <br>
 예)
-console.log(__filename); 
-console.log(__dirname); 
+console.log(__filename); <br>
+console.log(__dirname); <br>
 
 ## 2. process 객체의 속성과 이벤트 
 
-Node.js 는 process 전역 객체를 제공
-process 객체는 프로세스 정보를 제공하며 제어할수있게하는 객체
+Node.js 는 process 전역 객체를 제공<br>
+process 객체는 프로세스 정보를 제공하며 제어할수있게하는 객체<br>
 
-env 컴퓨터 환경정보
-version 버전을 나타냄
-versions 종속된 프로그램 버전
-arch 프로세서의 아키텍처를 나타냄
-platform 플랫폼을 나타냄 
+env 컴퓨터 환경정보<br>
+version 버전을 나타냄<br>
+versions 종속된 프로그램 버전<br>
+arch 프로세서의 아키텍처를 나타냄<br>
+platform 플랫폼을 나타냄 <br>
 
-process 객체의 메소드 
-exit 프로그램종료 
-memoryUsage() 메모리 사용정보 객체를 리턴
-uptime() 현재 프로그램이 실행된 시간을 리턴
+process 객체의 메소드 <br>
+exit 프로그램종료 <br>
+memoryUsage() 메모리 사용정보 객체를 리턴<br>
+uptime() 현재 프로그램이 실행된 시간을 리턴<br>
 
 ## 3. process 객체와 이벤트 개요 .
-exit 프로그램종료
-uncaughException 예외가 일어날 때 발생 
+exit 프로그램종료<br>
+uncaughException 예외가 일어날 때 발생 <br>
 
 ## 4. OS 모듈 
-const os = require('os');
+const os = require('os');<br>
 
-메소드 
-hostname() 호스트 이름을 리턴
-type() 운영체제 이름리턴 
-등등 
+메소드 <br>
+hostname() 호스트 이름을 리턴<br>
+type() 운영체제 이름리턴 <br>
+등등 <br>
 
 ## 5. url 모듈 
-const url =require'(url')
-메소드 
-parse(urlStr[.parseQueryStrong=false.slashesDenoteHost=false])
-url 문자열을 url 객체로 변환해 리턴합니다 
-format(urlObj) url객체를 url문자열로 변환해 리턴
-resolve(from to) 매개변수를 조합하여 완전한 url문자열을 생성해 리턴 
+const url =require'(url')<br>
+메소드 <br>
+parse(urlStr[.parseQueryStrong=false.slashesDenoteHost=false])<br>
+url 문자열을 url 객체로 변환해 리턴합니다 <br>
+format(urlObj) url객체를 url문자열로 변환해 리턴<br>
+resolve(from to) 매개변수를 조합하여 완전한 url문자열을 생성해 리턴<br> 
 
 ## 6. File System 모듈 
-const fs = requrie('fs')
-파일 읽기 : 실행할 자바스크립트 파일이 있는 풀더에 textfile.txt이름의 파일을 생성 
-fs.readFileSync(<파일이름>)
-fs.readFile(<파일이름>,<콜백함수>) 비동기적으로 파일을 읽어드림
+const fs = requrie('fs')<br>
+파일 읽기 : 실행할 자바스크립트 파일이 있는 풀더에 textfile.txt이름의 파일을 생성 <br>
+fs.readFileSync(<파일이름>)<br>
+fs.readFile(<파일이름>,<콜백함수>) 비동기적으로 파일을 읽어드림<br>
 
 ## 7. 노드 패키지 매니저 
-과거의 프로그래밍 언어들은 외뷰 모듈 설치가 어려웠음 
-현재는 패키지 매니저 모듈관리 프로그램을 사용해 모듈을 쉽게 설치하고 활용
-Node.js는 npm 패키지 매니저를 사용 
-예) npm istall <모듈이름>
-npm istall express  @사용으로 원하는 버전을설치
-express@4 
+과거의 프로그래밍 언어들은 외뷰 모듈 설치가 어려웠음 <br>
+현재는 패키지 매니저 모듈관리 프로그램을 사용해 모듈을 쉽게 설치하고 활용<br>
+Node.js는 npm 패키지 매니저를 사용 <br>
+예) npm istall <모듈이름><br>
+npm istall express  @사용으로 원하는 버전을설치<br>
+express@4 <br>
 
 ## 8. request 모듈 
-웹 요청을 쉽게 만들어 주는 모듈로 외부 모듈임 
-설치 npm install request 
-모듈 추출 const request = require('request');
+웹 요청을 쉽게 만들어 주는 모듈로 외부 모듈임 <br>
+설치 npm install request <br>
+모듈 추출 const request = require('request');<br>
 
 ## 9. cheerio 모듈
-request 모듈로 가져온 웹 페이지는 단순한 HTML  문자열임
-cheerio 모듈 가져온 웹페이지의 특정 위치에서 손쉽게 데이터 추출
-모듈 추출 const cheerio = require('cheerio');
+request 모듈로 가져온 웹 페이지는 단순한 HTML  문자열임<br>
+cheerio 모듈 가져온 웹페이지의 특정 위치에서 손쉽게 데이터 추출<br>
+모듈 추출 const cheerio = require('cheerio');<br>
 
 
 
